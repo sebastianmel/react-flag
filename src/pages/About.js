@@ -1,9 +1,11 @@
+import Logo from "../components/Logo";
 import Navigation from "../components/Navigation";
 
 const About = () => {
     return (
         <div className="about">
             <Navigation />
+            <Logo/>
             <h1>A propos</h1>
             <br/>
             <p> Donec a nibh ut elit vestibulum tristique Integer at pede Cras volutpat variu
