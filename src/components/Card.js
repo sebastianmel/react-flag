@@ -12,7 +12,7 @@ console.log(country);
                 <ul>
                     <li>{country.name}</li>
                     <li>{country.captal}</li>
-                    <li>{country.population}</li>
+                    <li>Population : {country.population}</li>
                 </ul>
             </div>
 
