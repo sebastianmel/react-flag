@@ -2,7 +2,11 @@ import React from 'react';
 
 const Card = (props) => {
     const {country}=props;
-console.log(country);
+
+    const numberFormat = (x) => {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+      }
+
 
     
     return (
@@ -11,8 +15,8 @@ console.log(country);
             <div className="data-container">
                 <ul>
                     <li>{country.name}</li>
-                    <li>{country.captal}</li>
-                    <li>Population : {country.population}</li>
+                    <li>{country.capital}</li>
+                    <li>Population : {numberFormat(country.population)}</li>
                 </ul>
             </div>
 
