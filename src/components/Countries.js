@@ -23,8 +23,14 @@ const Countries = () => {
         }
         const sortedCountry = () => {
             const countryObj = Object.keys(data).map((i) => data[i]);
-            const sortedArray = countryObj.sort((a, b) => {
-                return b.population - a.population;
+            const sortedArray = countryObj.sort((a,b) => {
+            const firsNme = a.name[0];
+            const secondNme = b.name[0];
+
+            
+            
+
+                return firsNme < secondNme ;
             });
             sortedArray.length = rangeValue;
             setSortedData(sortedArray);
@@ -33,6 +39,7 @@ const Countries = () => {
 
     }, [data, rangeValue, playOnce]);
 
+  
 
 
     return (
